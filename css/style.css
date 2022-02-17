@@ -89,7 +89,7 @@ a.skip{
 }
 
 
-nav a:focus {
+a:focus {
   border-top: 2px solid yellow;
   text-decoration: none;
 }
@@ -98,15 +98,15 @@ nav a:focus {
 .container{
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-row-gap: 30px;
+  row-gap: 30px;
 }
 
 .intro {
   background-image: url("../images/header.jpg"); 
-  background-color: #858585;
+  background-color: #707070;
   min-height: 400px;
   background-attachment: fixed;
-  background-position: bottom;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -165,13 +165,12 @@ img {
     position: absolute;
     left: 0px;
     top: 20px;
-    border-top: 2px solid yellow;
-    text-decoration: none;
   }
+
   .container {
     display: grid;
     grid-template-columns: 50px auto 500px auto 50px;
-    grid-row: 300px 300px 300px 300px; 
+    grid-template-rows: 300px 300px 300px 300px; 
   }
 
   .about, .method, .clients-image, .contact-image {
